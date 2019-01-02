@@ -19,9 +19,16 @@ namespace sourcetree_git
         int i = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-                 i++;
-                //listBox1.Items.Add("hello " + i.ToString());
-                listBox1.Items.Add("chyileee " + i.ToString());
+            timer1.Interval = 100;
+            timer1.Enabled = !timer1.Enabled;
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            i++;
+            //listBox1.Items.Add("hello " + i.ToString());
+            listBox1.Items.Add("chyileee " + i.ToString());
         }
     }
 }
